@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Tela de Cadastro de produtos</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
 </head>
+
 <body>
-    
+    <nav class="navbar">ERP - FLEX SISTEMAS
+        <ul>
+            <li>Login</li>
+        </ul>
+
+    </nav>
+
+    <h1>Cadastro de produtos</h1>
+
+    <form class="form" action=".">
+        <div class="form-group">
+            <label for="descricao">Descrição do Produto</label>
+            <input type="text" id="descricao" value="" required>
+        </div>
+        <div class="form-group">
+            <label for="und">Unidade de Medida</label>
+            <input type="text" id="und" value="" required>
+        </div>
+        <div class="form-group">
+            <label for="ncm">NCM</label>
+            <input type="text" id="ncm" value="" required>
+        </div>
+        <div class="form-group">
+            <label for="preco">Valor Unitario</label>
+            <input type="text" id="preco" value="" required>
+        </div>
+    </form>
+
+
     <script src='./js/main.js'></script>
 </body>
+
 </html>
