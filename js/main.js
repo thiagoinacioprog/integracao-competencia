@@ -4,7 +4,8 @@ document.getElementById('btn-salvar').addEventListener('click', () => {
     const und = document.getElementById('und').value;
     const ncm = document.getElementById('ncm').value;
     const preco = document.getElementById('preco').value;
-
+    
+    
     const dataToSend = {
         descricao: descricao,
         und: und,
@@ -12,6 +13,8 @@ document.getElementById('btn-salvar').addEventListener('click', () => {
         preco: preco
 
     };
+
+
 
     alert(JSON.stringify(dataToSend))
 
