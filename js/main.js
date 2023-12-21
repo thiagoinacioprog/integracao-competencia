@@ -1,3 +1,7 @@
+import {createProduto, } from "./services.js";
+
+
+  
 document.getElementById('btn-salvar').addEventListener('click', () => {
     
     const descricao = document.getElementById('descricao').value;
@@ -6,6 +10,8 @@ document.getElementById('btn-salvar').addEventListener('click', () => {
     const preco = document.getElementById('preco').value;
     
     
+
+
     const dataToSend = {
         descricao: descricao,
         und: und,
@@ -14,8 +20,9 @@ document.getElementById('btn-salvar').addEventListener('click', () => {
 
     };
 
+    createProduto(dataToSend);
 
 
-    alert(JSON.stringify(dataToSend))
+    // alert(JSON.stringify(dataToSend))
 
 });
