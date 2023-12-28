@@ -1,5 +1,5 @@
 {
-  "posts": [
+  "PRODUTOS": [
     {
       "id": 1,
       "descricao": "ALFAJOR",
@@ -13,21 +13,13 @@
       "ncm": "21069090",
       "preco": "7",
       "id": 2
-    }
-  ],
-  "comments": [
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "descricao": "TESTE",
+      "und": "TESTE",
+      "ncm": "TESTE",
+      "preco": "TESTE",
+      "id": 3
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
-
-
-
-
-
