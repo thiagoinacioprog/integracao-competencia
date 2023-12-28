@@ -1,28 +1,44 @@
-import {createProduto, } from "./services.js";
+import { createProdutos, getAllProdutos } from "./services.js";
 
+window.onload = ()=>{
+    getProdutos();
+}
 
-  
-document.getElementById('btn-salvar').addEventListener('click', () => {
+const getProdutos = () => {
+    const ul = document.getElementById('ul');
     
-    const descricao = document.getElementById('descricao').value;
-    const und = document.getElementById('und').value;
-    const ncm = document.getElementById('ncm').value;
-    const preco = document.getElementById('preco').value;
-    
-    
+    getAllProdutos().then(response=>{
+        response.forEach(produto=>{
+            const li = document.createElement('li');
+            li.innerHTML = `
+                <p>${produto.descricao} - ${produto.und} - ${produto.ncm} - ${produto.preco} </p>
+            `;
 
+            ul.appendChild(li);
 
-    const dataToSend = {
-        descricao: descricao,
-        und: und,
-        ncm: ncm,
-        preco: preco
+        })
 
-    };
+    })
+}
 
-    createProduto(dataToSend);
+document.getElementById('btn-salvar').addEventListener('click', async () => {
+    try {
+        
+        const descricao = document.getElementById('descricao').value;
+        const und = document.getElementById('und').value;
+        const ncm = document.getElementById('ncm').value;
+        const preco = document.getElementById('preco').value;
 
+        const produtos = {
+            descricao,
+            und,
+            ncm,
+            preco
+        };
 
-    // alert(JSON.stringify(dataToSend))
-
+        
+        await createProdutos(produtos);
+    } catch (error) {
+        console.error('Error: ', error);
+    }
 });

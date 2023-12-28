@@ -1,10 +1,46 @@
 {
   "produtos": [
     {
-      "descricao": "",
-      "und": "",
-      "ncm": "",
-      "preco": ""
+      "id": 1,
+      "descricao": "ALFAJOR",
+      "und": "UN",
+      "ncm": "21063030",
+      "preco": "12"
+    },
+    {
+      "id": 2,
+      "descricao": "BROWNIE",
+      "und": "UN",
+      "ncm": "21063030",
+      "preco": "12"
+    },
+    {
+      "id": 3,
+      "descricao": "DOCE",
+      "und": "UN",
+      "ncm": "21063030",
+      "preco": "12"
+    },
+    {
+      "id": 4,
+      "descricao": "SALGADO",
+      "und": "UN",
+      "ncm": "21063030",
+      "preco": "12"
+    },
+    {
+      "descricao": "asd",
+      "und": "adas",
+      "ncm": "asdasd",
+      "preco": "asdasd",
+      "id": 5
+    },
+    {
+      "descricao": "teste",
+      "und": "teste",
+      "ncm": "teste",
+      "preco": "trdtr",
+      "id": 6
     }
   ]
 }
